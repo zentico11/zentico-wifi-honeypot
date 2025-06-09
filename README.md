@@ -11,16 +11,19 @@ Requirements:
 
 Installation:
 1. Install required packages:
+
    sudo apt install hostapd dnsmasq
 
 3. Configure the wireless interface:
+
    sudo ip link set wlan0 down
 
    sudo ip addr add 192.168.150.1/24 dev wlan0
 
    sudo ip link set wlan0 up
 
-4. Start the tool:
+5. Start the tool:
+
    sudo python3 main.py
 
 Warning: Use only on your own network or in legal testing environments.
